@@ -2,6 +2,7 @@
 
 const video = document.createElement("video");
 const canvasElement = document.getElementById("qr-canvas");
+const footer = document.getElementById("footer");
 const canvas = canvasElement.getContext("2d");
 
 const qrResult = document.getElementById("qr-result");
@@ -17,7 +18,7 @@ qrcode.callback = res => {
     video.srcObject.getTracks().forEach(track => {
       track.stop();
     });
-
+    footer.hidden = false;
     qrResult.hidden = false;
     canvasElement.hidden = true;
     btnScanQR.hidden = false;
