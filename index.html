@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fake Check-in</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Fake Check-in</h1>
+      <canvas hidden="" id="qr-canvas"></canvas>
+      <div id="content">
+        <a id="btn-scan-qr">Check-in now.</a>
+
+        <div id="qr-result" hidden="">
+          <p><b>Don't be a covidiot.</b></p>
+          <p>Checking in helps contact tracers and decreases the chances of lockdowns extending.</p>
+          <p>
+            <a href="https://www.coronavirus.vic.gov.au/book-your-vaccine-appointment"
+              >Book vaccination.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
