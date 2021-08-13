@@ -26,13 +26,9 @@ h1 {
   margin: 0;
 }
 
-/* #content {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  width:300px;
-  margin-left: -150px;
-} */
+#content {
+  margin-top: 50px;
+}
 
 #qr-canvas {
   margin: auto;
