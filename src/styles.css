@@ -43,10 +43,6 @@ h1 {
   top: 0;
 }
 
-#btn-scan-qr {
-  cursor: pointer;
-}
-
 #btn-scan-qr img {
   height: 10em;
   padding: 15px;
@@ -58,6 +54,11 @@ h1 {
   background: #7bc74d;
   padding: 19px;
   color: #fff;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 #qr-result {
