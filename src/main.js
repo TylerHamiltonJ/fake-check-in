@@ -60,3 +60,18 @@ function scan() {
 
 canvasElement.width = window.innerWidth;
 canvasElement.height = window.innerHeight;
+
+const stateLinks = document.getElementsByClassName("state");
+
+var changeColor = function (event) {
+  const selected = document.getElementsByClassName("selected");
+  for (var i = 0; i < selected.length; i++) {
+    console.log(selected[i])
+    selected[i].classList.remove("selected");
+  }
+  event.target.classList.add("selected");
+};
+
+for (var i = 0; i < stateLinks.length; i++) {
+  stateLinks[i].addEventListener("click", changeColor, false);
+}
