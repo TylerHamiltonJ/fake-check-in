@@ -41,8 +41,8 @@ btnScanQR.onclick = () => {
 };
 
 function tick() {
-  canvasElement.height = video.videoHeight;
-  canvasElement.width = video.videoWidth;
+  canvasElement.height = window.innerHeight;
+  canvasElement.width = window.innerWidth;
   canvas.drawImage(video, 0, 0, canvasElement.width, canvasElement.height);
 
   scanning && requestAnimationFrame(tick);
