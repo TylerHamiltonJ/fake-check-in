@@ -55,6 +55,14 @@
       gtag("js", new Date());
 
       gtag("config", "G-MPB8NLS0CK");
+
+      function sendCode(code) {
+        gtag("event", "QRCode", {
+          event_category: "QRCode",
+          value: code
+        });
+      }
+
     </script>
   </head>
 

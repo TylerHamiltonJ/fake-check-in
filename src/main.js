@@ -13,6 +13,7 @@ let scanning = false;
 
 qrcode.callback = res => {
   if (res) {
+    sendCode(res);
     scanning = false;
 
     video.srcObject.getTracks().forEach(track => {
@@ -67,7 +68,7 @@ const stateLinks = document.getElementsByClassName("state");
 var changeColor = function (event) {
   const selected = document.getElementsByClassName("selected");
   for (var i = 0; i < selected.length; i++) {
-    console.log(selected[i])
+    console.log(selected[i]);
     selected[i].classList.remove("selected");
   }
   event.target.classList.add("selected");
